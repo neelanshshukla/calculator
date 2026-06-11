@@ -1,0 +1,73 @@
+h1
+{
+   font-family:"Space Mono";
+   text-align: center;
+   font-size:3rem;
+   text-shadow: 1px 1px 2px;
+   margin-top: 17px;
+}
+
+body
+{
+    background-color: rgb(202, 202, 202);
+    margin:0px;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    font-family:"Space Mono";
+}
+
+#calculator
+{
+
+    background-color:rgb(30, 30, 30);
+    border-radius:17px;
+    max-width:370px;
+    overflow:hidden;
+    border:8px outset black;
+}
+
+#display
+{
+   text-shadow: 1px 1px 2px;
+    margin-top:7px;
+    color:black;
+    text-align:left;
+    background-color:rgb(149, 151, 149);
+    width:92.8%;
+    height: 13%;
+    border: 13px inset black;
+    font-size:3rem;
+}
+
+#keys
+ {
+    display:grid;                           /*IMP PART ,this gives the calculator a format*/
+    grid-template-columns: repeat(4, 1fr);   /*HERE fr means fractional unit*/
+    gap:10px;
+    padding: 21px;
+ }
+
+ button
+ {
+    background-color:rgb(148, 148, 148);
+    border-radius: 17px;
+    border:5px outset black;
+    width:70px;
+    height:70px;
+    font-size:3rem;
+    cursor:pointer;
+ }
+
+ button:active
+ {
+    border:5px inset black;
+ }
+
+ .operator-btn
+ {
+    background-color:rgb(213, 213, 213);
+ }
+ 
